@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d7e-et-txc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZWr-hZ-hVd">
+            <objects>
+                <navigationController id="d7e-et-txc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UdI-pv-i6v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="kPV-W8-4Hk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0E-ok-xA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="473"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="AFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwg-SK-xQz">
+                                <rect key="frame" x="50" y="174" width="500" height="30"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDidTouched:" destination="whP-gf-Uak" eventType="touchUpInside" id="XMb-PR-hrK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isf-Se-cqG">
+                                <rect key="frame" x="50" y="254" width="500" height="30"/>
+                                <state key="normal" title="Modal"/>
+                                <connections>
+                                    <action selector="modalBtnDidTouch:" destination="whP-gf-Uak" eventType="touchUpInside" id="Ou9-dX-d0S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5F-eg-kSj">
+                                <rect key="frame" x="50" y="334" width="500" height="30"/>
+                                <state key="normal" title="Alert"/>
+                                <connections>
+                                    <action selector="alertBtnDidTouch:" destination="whP-gf-Uak" eventType="touchUpInside" id="243-g4-1EO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="isf-Se-cqG" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="30" id="1Z5-Sv-owt"/>
+                            <constraint firstItem="q5F-eg-kSj" firstAttribute="top" secondItem="isf-Se-cqG" secondAttribute="bottom" constant="50" id="AT7-OH-5J3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q5F-eg-kSj" secondAttribute="trailing" constant="30" id="Eei-iL-Edm"/>
+                            <constraint firstItem="q5F-eg-kSj" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="30" id="Odz-io-mOJ"/>
+                            <constraint firstItem="isf-Se-cqG" firstAttribute="top" secondItem="jwg-SK-xQz" secondAttribute="bottom" constant="50" id="SRS-UM-ztX"/>
+                            <constraint firstItem="jwg-SK-xQz" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="110" id="pi6-a1-36b"/>
+                            <constraint firstItem="jwg-SK-xQz" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="30" id="tCS-w0-cbb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="isf-Se-cqG" secondAttribute="trailing" constant="30" id="tn1-E0-5wH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jwg-SK-xQz" secondAttribute="trailing" constant="30" id="unm-84-Ffg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RDd-GG-Xic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+    </scenes>
+</document>

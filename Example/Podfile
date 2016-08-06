@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'AFSheme_Example' do
+  pod 'AFSheme', :path => '/Users/aoponaopon/github/afsheme/AFSheme/'
+
+  target 'AFSheme_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end

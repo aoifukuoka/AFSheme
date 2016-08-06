@@ -1,0 +1,6 @@
+framework module Pods_AFSheme_Example {
+  umbrella header "Pods-AFSheme_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

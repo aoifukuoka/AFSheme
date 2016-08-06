@@ -1,0 +1,6 @@
+framework module AFSheme {
+  umbrella header "AFSheme-umbrella.h"
+
+  export *
+  module * { export * }
+}
