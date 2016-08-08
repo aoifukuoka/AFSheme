@@ -93,18 +93,18 @@ You have to give ViewController's instance to the method.
 
 ## Delegate method
 In your AppDelegate.m, please implement
-```Objective-C:Appdelegate.m
+```Objective-C
 - (NSDictionary *)afShemeMappingDictionary;
 ```
 as 
 
-```Objective-C:AppDelegate.m
+```Objective-C
 @interface AppDelegate () <AFShemeConverterDelegate>
 
 @end
 ```
 and
-```Objective-C:AppDelegate.m
+```Objective-C
 - (NSDictionary *)afShemeMappingDictionary {  
     return @{@"CustomViewController":CustomViewController.className,  
              @"HogeViewController":HogeViewController.className};
