@@ -20,6 +20,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
+    [self.navigationController.navigationBar setTranslucent:NO];
 }
 
 - (IBAction)buttonDidTouched:(id)sender {

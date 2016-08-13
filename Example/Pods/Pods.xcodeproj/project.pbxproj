@@ -89,6 +89,8 @@
 		79558B1F97ABE4AB8942DC18BEBD4B82 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4BD2050ABE1205D1B1A164803A18DA /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B223B4E6EF14BA12DA113F7EE10B96C /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1E859E32D523B17CD8D94AED21A1D4 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DA07ACDA1C124C8F73C83FC63A592A8 /* AFShemeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD014F54DFB513DA5E8E9D18F785944 /* AFShemeConverter.m */; };
+		7E4CF71F1D5EFC94001ABBAB /* AFShemeViewControllerUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4CF71D1D5EFC94001ABBAB /* AFShemeViewControllerUtility.h */; };
+		7E4CF7201D5EFC94001ABBAB /* AFShemeViewControllerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4CF71E1D5EFC94001ABBAB /* AFShemeViewControllerUtility.m */; };
 		805E425BBEF7A6133E32E1D30A073010 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = B34472CAE1E8EC26152CEFB1E82BE050 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		80C929DE9E8939AAA24357F8F53D5F61 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 612DFA52478D8CE9C4866818C95C29E9 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		81F30F14BE5F521419A9843F14A99258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB0E4EAB26DF11F1DE60103A194FD94 /* Foundation.framework */; };
@@ -321,6 +323,8 @@
 		7A7D54F2046B9323D0CB2748E382BAA3 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
 		7BE7EA43918F8547CCF8A9EABF75B788 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
 		7D657B34A1C94FBF176F35C1081FD8A9 /* Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-umbrella.h"; sourceTree = "<group>"; };
+		7E4CF71D1D5EFC94001ABBAB /* AFShemeViewControllerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFShemeViewControllerUtility.h; path = "../../Development Pods/AFSheme/AFSheme/Classes/utility/AFShemeViewControllerUtility.h"; sourceTree = "<group>"; };
+		7E4CF71E1D5EFC94001ABBAB /* AFShemeViewControllerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFShemeViewControllerUtility.m; path = "../../Development Pods/AFSheme/AFSheme/Classes/utility/AFShemeViewControllerUtility.m"; sourceTree = "<group>"; };
 		7EF2072991CBA5987025178150BD49F6 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		7F5D1A0E9BD4DDFBC87E078DEC833A16 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		827940DAD186863374E719CC8D5FCE23 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
@@ -622,6 +626,7 @@
 				98F73663A4D1F6D345A16D69C55CB74B /* AFSheme.m */,
 				D05EC4F00E9992795DD9093161D1F70E /* AFShemeConverter.h */,
 				4DD014F54DFB513DA5E8E9D18F785944 /* AFShemeConverter.m */,
+				7E4CF71C1D5EFC43001ABBAB /* utility */,
 				D5B26F2C18AA031ACBC00270EB2D6C89 /* categories */,
 			);
 			path = Classes;
@@ -736,6 +741,15 @@
 				09089F6F0E696D7267FBA288BC9E2B5C /* Products */,
 				DCE48E2F9E671019C3ECC15388B88F62 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7E4CF71C1D5EFC43001ABBAB /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				7E4CF71D1D5EFC94001ABBAB /* AFShemeViewControllerUtility.h */,
+				7E4CF71E1D5EFC94001ABBAB /* AFShemeViewControllerUtility.m */,
+			);
+			name = utility;
 			sourceTree = "<group>";
 		};
 		922DE448D48A857562C0B1637BCEDDE6 /* iOS */ = {
@@ -1003,6 +1017,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4CF71F1D5EFC94001ABBAB /* AFShemeViewControllerUtility.h in Headers */,
 				78E2BBFCC783F55B30F671D445CB20EC /* AFSheme-umbrella.h in Headers */,
 				34E30EF7906B9D31CC61917C2C19643A /* AFSheme.h in Headers */,
 				24D5D9B5B4F633D7351897B6BDC01A20 /* AFShemeConverter.h in Headers */,
@@ -1279,6 +1294,7 @@
 				7DA07ACDA1C124C8F73C83FC63A592A8 /* AFShemeConverter.m in Sources */,
 				FEF2BC91F31B6A4C7BC8A0BEDEC4390C /* NSObject+ClassName.m in Sources */,
 				F68852B817C1A654336A4992598C790E /* NSString+CreateViewType.m in Sources */,
+				7E4CF7201D5EFC94001ABBAB /* AFShemeViewControllerUtility.m in Sources */,
 				D0D1329EC798873B77B178CB5C650DB1 /* UIViewController+Parameters.m in Sources */,
 				B6CBE42B695E32CD9EFD1DDDEA73876B /* UIViewController+StoryBoard.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "AFSheme.h"
+#import "AFShemeViewControllerUtility.h"
 
 @implementation AFSheme
 
@@ -55,7 +56,7 @@
 + (void)performModalTypeTransition:(UIViewController *)vc
 {
     @try {
-        UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+        UINavigationController *nvc = getNavigationController(vc);
         [topViewController() presentViewController:nvc animated:YES completion:nil];
         return;
     } @catch (NSException *exception) {
@@ -71,38 +72,6 @@
 + (void)performAlertTypeTransition:(UIViewController *)vc
 {
     [topViewController() presentViewController:vc animated:YES completion:nil];
-}
-
-UIViewController *topViewController()
-{
-    return getTopViewControllerRecursively([UIApplication sharedApplication].keyWindow.rootViewController);
-}
-
-UIViewController *getTopViewControllerRecursively(UIViewController *viewController)
-{
-    UIViewController *result = nil;
-    if ([viewController isKindOfClass:[UINavigationController class]]) {
-        UINavigationController *navigationController = (UINavigationController *)viewController;
-        viewController = getTopViewControllerRecursively(navigationController.topViewController);
-        if (result != viewController) {
-            result = viewController;
-        }
-    }else if ([viewController isKindOfClass:[UITabBarController class]]) {
-        UITabBarController *tabBarController = (UITabBarController *)viewController;
-        viewController = getTopViewControllerRecursively(tabBarController.selectedViewController);
-        if (result != viewController) {
-            result = viewController;
-        }
-    }else if (viewController && viewController.presentedViewController) {
-        UIViewController *modalViewController = viewController.presentedViewController;
-        viewController = getTopViewControllerRecursively(modalViewController);
-        if (result != viewController) {
-            result = viewController;
-        }
-    }else {
-        result = viewController;
-    }
-    return result;
 }
 
 @end
