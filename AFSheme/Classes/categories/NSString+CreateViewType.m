@@ -8,12 +8,6 @@
 
 #import "NSString+CreateViewType.h"
 
-@interface NSString (CreateViewType)
-
-@property(nonatomic) NSDictionary *mappingDictionary;
-
-@end
-
 @implementation NSString (CreateViewType)
 
 - (CreateViewType)toCreateViewType
