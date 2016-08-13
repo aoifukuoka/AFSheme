@@ -134,6 +134,13 @@ UIViewController's presentViewController method style.
 UIAlertController's style.
 When you want to use UIAlertControlker, plz use this type.
 
+You can get these value from NSString as below.
+```Objective-C
+@"push".toCreateViewType;
+@"modal".toCreateViewType;
+@"alert".toCreateViewType;
+```
+
 3.```BOOL useStoryBoard```  
 Whether you want to use storyboard style or not.
 If you set this value as YES, you must name ViewController's class as same as storyboard's name and storyboard's identifier.  
