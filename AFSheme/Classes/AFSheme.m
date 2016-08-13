@@ -7,7 +7,7 @@
 //
 
 #import "AFSheme.h"
-#import "AFViewControllerUtility.h"
+#import "AFShemeViewControllerUtility.h"
 
 @implementation AFSheme
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AFViewControllerUtility : NSObject
+@interface AFShemeViewControllerUtility : NSObject
 
 UIViewController *topViewController();
 UIViewController *getTopViewControllerRecursively(UIViewController *viewController);

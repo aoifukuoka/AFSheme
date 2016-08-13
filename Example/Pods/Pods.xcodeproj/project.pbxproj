@@ -94,8 +94,8 @@
 		79558B1F97ABE4AB8942DC18BEBD4B82 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4BD2050ABE1205D1B1A164803A18DA /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A026FEAC5120C00DF6A732ACC618765 /* NSObject+ClassName.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4E682712B078DB61013C573796C33 /* NSObject+ClassName.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B223B4E6EF14BA12DA113F7EE10B96C /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1E859E32D523B17CD8D94AED21A1D4 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EDDCBEC1D5F26BE00A7C949 /* AFViewControllerUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDDCBEA1D5F26BE00A7C949 /* AFViewControllerUtility.h */; };
-		7EDDCBED1D5F26BE00A7C949 /* AFViewControllerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDCBEB1D5F26BE00A7C949 /* AFViewControllerUtility.m */; };
+		7EDDCBEC1D5F26BE00A7C949 /* AFShemeViewControllerUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDDCBEA1D5F26BE00A7C949 /* AFShemeViewControllerUtility.h */; };
+		7EDDCBED1D5F26BE00A7C949 /* AFShemeViewControllerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDCBEB1D5F26BE00A7C949 /* AFShemeViewControllerUtility.m */; };
 		805E425BBEF7A6133E32E1D30A073010 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = B34472CAE1E8EC26152CEFB1E82BE050 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		80C929DE9E8939AAA24357F8F53D5F61 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 612DFA52478D8CE9C4866818C95C29E9 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		81F30F14BE5F521419A9843F14A99258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB0E4EAB26DF11F1DE60103A194FD94 /* Foundation.framework */; };
@@ -325,8 +325,8 @@
 		7A7D54F2046B9323D0CB2748E382BAA3 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
 		7BE7EA43918F8547CCF8A9EABF75B788 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
 		7D657B34A1C94FBF176F35C1081FD8A9 /* Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-umbrella.h"; sourceTree = "<group>"; };
-		7EDDCBEA1D5F26BE00A7C949 /* AFViewControllerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewControllerUtility.h; sourceTree = "<group>"; };
-		7EDDCBEB1D5F26BE00A7C949 /* AFViewControllerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewControllerUtility.m; sourceTree = "<group>"; };
+		7EDDCBEA1D5F26BE00A7C949 /* AFShemeViewControllerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFShemeViewControllerUtility.h; sourceTree = "<group>"; };
+		7EDDCBEB1D5F26BE00A7C949 /* AFShemeViewControllerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFShemeViewControllerUtility.m; sourceTree = "<group>"; };
 		7EF2072991CBA5987025178150BD49F6 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		7F5D1A0E9BD4DDFBC87E078DEC833A16 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		827940DAD186863374E719CC8D5FCE23 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
@@ -808,8 +808,8 @@
 		C9ED4DF338360ABDDC92F3BD64625662 /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				7EDDCBEA1D5F26BE00A7C949 /* AFViewControllerUtility.h */,
-				7EDDCBEB1D5F26BE00A7C949 /* AFViewControllerUtility.m */,
+				7EDDCBEA1D5F26BE00A7C949 /* AFShemeViewControllerUtility.h */,
+				7EDDCBEB1D5F26BE00A7C949 /* AFShemeViewControllerUtility.m */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -961,7 +961,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1355EFEAA87B3CE5764040438206F3D /* AFSheme-umbrella.h in Headers */,
-				7EDDCBEC1D5F26BE00A7C949 /* AFViewControllerUtility.h in Headers */,
+				7EDDCBEC1D5F26BE00A7C949 /* AFShemeViewControllerUtility.h in Headers */,
 				C4398F90CA71014EA4FD5C43A31FD77C /* AFSheme.h in Headers */,
 				3C1805C97FE206E7B56054CF05F66832 /* AFShemeConverter.h in Headers */,
 				7A026FEAC5120C00DF6A732ACC618765 /* NSObject+ClassName.h in Headers */,
@@ -1217,7 +1217,7 @@
 				0A0E2D1028D9C3CBB1F197C2E11591ED /* NSObject+ClassName.m in Sources */,
 				2694196458850C884E9EE84C3E51ECA2 /* NSString+CreateViewType.m in Sources */,
 				B162B448979750BD6E05BD4D2074BF80 /* UIViewController+Parameters.m in Sources */,
-				7EDDCBED1D5F26BE00A7C949 /* AFViewControllerUtility.m in Sources */,
+				7EDDCBED1D5F26BE00A7C949 /* AFShemeViewControllerUtility.m in Sources */,
 				1EF26ED3AD9E910549BDD4CC8A942CE3 /* UIViewController+StoryBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

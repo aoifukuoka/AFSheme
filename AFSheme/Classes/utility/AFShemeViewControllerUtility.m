@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Aoi Fukuoka. All rights reserved.
 //
 
-#import "AFViewControllerUtility.h"
+#import "AFShemeViewControllerUtility.h"
 
-@implementation AFViewControllerUtility
+@implementation AFShemeViewControllerUtility
 
 UIViewController *topViewController()
 {
