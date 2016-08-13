@@ -37,7 +37,7 @@ or
 [AFSheme openSheme:CustomViewController.className
         parameters:@{}
     createViewType:CreateViewTypePush
-     useStoryBoard:YES];
+     useStoryBoard:CustomViewController.hasStoryBoard];
 
 ```
 or 
@@ -144,8 +144,13 @@ You can get these value from NSString as below.
 3.```BOOL useStoryBoard```  
 Whether you want to use storyboard style or not.
 If you set this value as YES, you must name ViewController's class as same as storyboard's name and storyboard's identifier.  
+You can use
+```Objective-C
+BOOL CustomViewController.hasStoryBoard 
+// Return YES if CustomViewController can be initialized with UIStoryBoard.
+```
 ex. 
-If you want to use class CustomViewController, you must name StoryBoard name as CustomViewController, and StoryBoard identifier as CustomViewController.
+If you want to use class CustomViewController, you must name storyboard name as CustomViewController, and storyboard identifier as CustomViewController.
 
 ## Author
 
