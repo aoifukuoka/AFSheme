@@ -1,5 +1,5 @@
 //
-//  AFShemeViewControllerUtility.h
+//  AFViewControllerUtility.h
 //  AFSheme
 //
 //  Created by aoponaopon on 2016/08/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AFShemeViewControllerUtility : NSObject
+@interface AFViewControllerUtility : NSObject
 
 UIViewController *topViewController();
 UIViewController *getTopViewControllerRecursively(UIViewController *viewController);
