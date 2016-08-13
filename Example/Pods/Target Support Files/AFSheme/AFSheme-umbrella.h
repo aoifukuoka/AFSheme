@@ -6,6 +6,7 @@
 #import "NSString+CreateViewType.h"
 #import "UIViewController+Parameters.h"
 #import "UIViewController+StoryBoard.h"
+#import "AFShemeViewControllerUtility.h"
 
 FOUNDATION_EXPORT double AFShemeVersionNumber;
 FOUNDATION_EXPORT const unsigned char AFShemeVersionString[];
