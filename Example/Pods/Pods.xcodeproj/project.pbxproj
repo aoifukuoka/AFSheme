@@ -94,7 +94,8 @@
 		79558B1F97ABE4AB8942DC18BEBD4B82 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4BD2050ABE1205D1B1A164803A18DA /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A026FEAC5120C00DF6A732ACC618765 /* NSObject+ClassName.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF4E682712B078DB61013C573796C33 /* NSObject+ClassName.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B223B4E6EF14BA12DA113F7EE10B96C /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1E859E32D523B17CD8D94AED21A1D4 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8BDB42DFFEC7A2B83B3795B20D7651 /* AFShemeViewControllerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F79A584C334BECC102A338BFE39002 /* AFShemeViewControllerUtility.m */; };
+		7EDDCBEC1D5F26BE00A7C949 /* AFViewControllerUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDDCBEA1D5F26BE00A7C949 /* AFViewControllerUtility.h */; };
+		7EDDCBED1D5F26BE00A7C949 /* AFViewControllerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDCBEB1D5F26BE00A7C949 /* AFViewControllerUtility.m */; };
 		805E425BBEF7A6133E32E1D30A073010 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = B34472CAE1E8EC26152CEFB1E82BE050 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		80C929DE9E8939AAA24357F8F53D5F61 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 612DFA52478D8CE9C4866818C95C29E9 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		81F30F14BE5F521419A9843F14A99258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB0E4EAB26DF11F1DE60103A194FD94 /* Foundation.framework */; };
@@ -130,7 +131,6 @@
 		B6CF2F08A9BA6BAC535FEB83F839FDEE /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D1A0E9BD4DDFBC87E078DEC833A16 /* UIImage+Diff.m */; };
 		B7185ADC751C1C1B68DCE07933CF0CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB0E4EAB26DF11F1DE60103A194FD94 /* Foundation.framework */; };
 		B84431CF8C64F363A334AA7089F6C134 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D45869BC2F37AD341CBDE9F822387 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8F9675E662AD7AEA11402900ADFCE4D /* AFShemeViewControllerUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 65AE19773E6ABB101415E3C0F4016689 /* AFShemeViewControllerUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA12B131F10BCE3BE6E9A02FC908FE9D /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EF39D56E8A55D649F9810E362FA318 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA56BBD57260B29137F21F62F12B6FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB0E4EAB26DF11F1DE60103A194FD94 /* Foundation.framework */; };
 		BAE2C26B7C689B39515F17B5E17C150D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FF5E3DD6F8A07CE52AA3A129D86791 /* QuartzCore.framework */; };
@@ -305,9 +305,7 @@
 		64E62B947C08376C71E07F669D636FF8 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
 		65151D31448276A43462B5C47014D6AB /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		652F5473C367E82611D23E9B87A36C45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65AE19773E6ABB101415E3C0F4016689 /* AFShemeViewControllerUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AFShemeViewControllerUtility.h; sourceTree = "<group>"; };
 		6732C58C04F8341AD50DE36AEE2EBF41 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
-		68F79A584C334BECC102A338BFE39002 /* AFShemeViewControllerUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AFShemeViewControllerUtility.m; sourceTree = "<group>"; };
 		69BE855C76546F434D61EAC92F2988BD /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		6A1F80FD765EB6D46AB2B2CDF719CFD7 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
 		6B959D8DDAA2ED93C94CF628C922CD14 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
@@ -327,6 +325,8 @@
 		7A7D54F2046B9323D0CB2748E382BAA3 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
 		7BE7EA43918F8547CCF8A9EABF75B788 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
 		7D657B34A1C94FBF176F35C1081FD8A9 /* Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-umbrella.h"; sourceTree = "<group>"; };
+		7EDDCBEA1D5F26BE00A7C949 /* AFViewControllerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewControllerUtility.h; sourceTree = "<group>"; };
+		7EDDCBEB1D5F26BE00A7C949 /* AFViewControllerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewControllerUtility.m; sourceTree = "<group>"; };
 		7EF2072991CBA5987025178150BD49F6 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		7F5D1A0E9BD4DDFBC87E078DEC833A16 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		827940DAD186863374E719CC8D5FCE23 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
@@ -808,8 +808,8 @@
 		C9ED4DF338360ABDDC92F3BD64625662 /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				65AE19773E6ABB101415E3C0F4016689 /* AFShemeViewControllerUtility.h */,
-				68F79A584C334BECC102A338BFE39002 /* AFShemeViewControllerUtility.m */,
+				7EDDCBEA1D5F26BE00A7C949 /* AFViewControllerUtility.h */,
+				7EDDCBEB1D5F26BE00A7C949 /* AFViewControllerUtility.m */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -961,9 +961,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1355EFEAA87B3CE5764040438206F3D /* AFSheme-umbrella.h in Headers */,
+				7EDDCBEC1D5F26BE00A7C949 /* AFViewControllerUtility.h in Headers */,
 				C4398F90CA71014EA4FD5C43A31FD77C /* AFSheme.h in Headers */,
 				3C1805C97FE206E7B56054CF05F66832 /* AFShemeConverter.h in Headers */,
-				B8F9675E662AD7AEA11402900ADFCE4D /* AFShemeViewControllerUtility.h in Headers */,
 				7A026FEAC5120C00DF6A732ACC618765 /* NSObject+ClassName.h in Headers */,
 				5DF5BA1412A29EBE6243A5EB179536D9 /* NSString+CreateViewType.h in Headers */,
 				6B66F155B9A037F5455101787EE03B29 /* UIViewController+Parameters.h in Headers */,
@@ -1214,10 +1214,10 @@
 				55A15FD372820B01B0CDA3B80FD4B2A1 /* AFSheme-dummy.m in Sources */,
 				32DE1C49702FE55E66B1ABD45DD2F4A0 /* AFSheme.m in Sources */,
 				4285244A2C0034770DACC6BC3129F505 /* AFShemeConverter.m in Sources */,
-				7D8BDB42DFFEC7A2B83B3795B20D7651 /* AFShemeViewControllerUtility.m in Sources */,
 				0A0E2D1028D9C3CBB1F197C2E11591ED /* NSObject+ClassName.m in Sources */,
 				2694196458850C884E9EE84C3E51ECA2 /* NSString+CreateViewType.m in Sources */,
 				B162B448979750BD6E05BD4D2074BF80 /* UIViewController+Parameters.m in Sources */,
+				7EDDCBED1D5F26BE00A7C949 /* AFViewControllerUtility.m in Sources */,
 				1EF26ED3AD9E910549BDD4CC8A942CE3 /* UIViewController+StoryBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
