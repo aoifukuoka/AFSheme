@@ -1,5 +1,5 @@
 PODS:
-  - AFSheme (0.1.1)
+  - AFSheme (0.1.2)
   - Expecta (1.0.5)
   - Expecta+Snapshots (3.0.0):
     - Expecta (~> 1.0)
@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: /Users/aoponaopon/github/afsheme/AFSheme/
 
 SPEC CHECKSUMS:
-  AFSheme: 1b2e42571f1cfdb621453ece1e320dfb2f0d53ef
+  AFSheme: 0d8763279e25774fa32ebe39ab9afc73be43e8b5
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
