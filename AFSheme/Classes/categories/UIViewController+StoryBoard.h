@@ -13,5 +13,6 @@
 
 + (instancetype)instantiate;
 + (instancetype)instantiateWithStoryBoard;
++ (BOOL)hasStoryBoard;
 
 @end

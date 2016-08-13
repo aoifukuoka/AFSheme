@@ -33,7 +33,7 @@
     [AFSheme openSheme:AFBlueViewController.className
             parameters:@{}
         createViewType:CreateViewTypeModal
-         useStoryBoard:YES];
+         useStoryBoard:AFBlueViewController.hasStoryBoard];
 }
 
 - (IBAction)alertBtnDidTouch:(id)sender {

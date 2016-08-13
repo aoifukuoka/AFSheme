@@ -28,4 +28,14 @@
     return [stb instantiateViewControllerWithIdentifier:stbName];
 }
 
++ (BOOL)hasStoryBoard
+{
+    @try {
+        [self instantiateWithStoryBoard];
+        return YES;
+    } @catch (NSException *exception) {
+        return NO;
+    }
+}
+
 @end
