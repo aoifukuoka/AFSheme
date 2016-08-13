@@ -3,6 +3,7 @@
 #import "AFSheme.h"
 #import "AFShemeConverter.h"
 #import "NSObject+ClassName.h"
+#import "NSString+CreateViewType.h"
 #import "UIViewController+Parameters.h"
 #import "UIViewController+StoryBoard.h"
 

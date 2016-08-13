@@ -11,13 +11,7 @@
 #import "UIViewController+Parameters.h"
 #import "AFShemeConverter.h"
 #import "NSObject+ClassName.h"
-
-typedef NS_ENUM(NSUInteger, CreateViewType)
-{
-    CreateViewTypePush = 0,
-    CreateViewTypeModal,
-    CreateViewTypeAlert,
-};
+#import "NSString+CreateViewType.h"
 
 @interface AFSheme : NSObject
 

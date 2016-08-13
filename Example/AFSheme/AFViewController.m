@@ -21,20 +21,21 @@
     self.view.backgroundColor = [UIColor redColor];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
 - (IBAction)buttonDidTouched:(id)sender {
-    
     [AFSheme openShemeWithString:@"AFBlueViewController"
                       parameters:@{}
-                  createViewType:CreateViewTypePush
+                  createViewType:@"push".toCreateViewType
                    useStoryBoard:YES];
-    
 }
+
 - (IBAction)modalBtnDidTouch:(id)sender {
     [AFSheme openSheme:AFBlueViewController.className
             parameters:@{}
         createViewType:CreateViewTypeModal
          useStoryBoard:YES];
 }
+
 - (IBAction)alertBtnDidTouch:(id)sender {
     UIAlertController *altC = [UIAlertController alertControllerWithTitle:@"Title"
                                                                   message:@"Message"
