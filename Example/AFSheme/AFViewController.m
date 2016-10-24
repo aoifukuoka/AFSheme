@@ -8,6 +8,7 @@
 
 #import "AFViewController.h"
 #import "AFBlueViewController.h"
+#import "AFRedViewController.h"
 
 @interface AFViewController ()
 
@@ -25,17 +26,17 @@
 }
 
 - (IBAction)buttonDidTouched:(id)sender {
-    [AFSheme openShemeWithString:@"AFBlueViewController"
-                      parameters:@{}
-                  createViewType:@"push".toCreateViewType
-                   useStoryBoard:YES];
+    [AFSheme openSheme:AFRedViewController.className
+            parameters:@{}
+        createViewType:@"push".toCreateViewType
+         useStoryBoard:AFRedViewController.hasStoryBoard];
 }
 
 - (IBAction)modalBtnDidTouch:(id)sender {
-    [AFSheme openSheme:AFBlueViewController.className
-            parameters:@{}
-        createViewType:CreateViewTypeModal
-         useStoryBoard:AFBlueViewController.hasStoryBoard];
+    [AFSheme openShemeWithString:@"AFBlueViewController"
+                      parameters:@{}
+                  createViewType:CreateViewTypeModal
+                   useStoryBoard:AFRedViewController.hasStoryBoard];
 }
 
 - (IBAction)alertBtnDidTouch:(id)sender {

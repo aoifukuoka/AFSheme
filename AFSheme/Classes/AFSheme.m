@@ -55,13 +55,7 @@
 
 + (void)performModalTypeTransition:(UIViewController *)vc
 {
-    @try {
-        UINavigationController *nvc = getNavigationController(vc);
-        [topViewController() presentViewController:nvc animated:YES completion:nil];
-        return;
-    } @catch (NSException *exception) {
-        [topViewController() presentViewController:vc animated:YES completion:nil];
-    }
+    [topViewController() presentViewController:vc animated:YES completion:nil];
 }
 
 + (void)performPushTypeTransition:(UIViewController *)vc
